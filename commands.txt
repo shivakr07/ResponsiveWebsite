@@ -1,0 +1,11 @@
+touch .gitignore
+git config --global user.name Shiva Kumar
+git config --global user.email youremail@example.com
+git init
+git add .   //files comes in staging area except ignored
+git commit  -m "Initial commit"  //commit made
+git status  # just to see -> working tree clean
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+tail <path to id_rsa.pub>  //add this key to github account
+git remote add origin <ssh url.git>
+git push origin master
